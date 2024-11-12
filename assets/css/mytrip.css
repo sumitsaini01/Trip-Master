@@ -89,7 +89,7 @@ main {
 /* Booking cards styling */
 .booking-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px; /* Gap between sections */
     align-items: stretch; /* Ensure all sections are the same height */
