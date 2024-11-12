@@ -1,0 +1,288 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 60px;
+}
+
+nav a {
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+}
+
+/* Header styling */
+.main-heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Filter buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+.filter-button.active {
+    background-color: #0056b3;
+}
+
+/* Search bar */
+.search-bar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Spacer to add space before cards */
+.spacer {
+    margin-bottom: 30px;
+}
+
+/* Booking cards styling */
+.booking-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between sections */
+    align-items: stretch; /* Ensure all sections are the same height */
+}
+
+/* Styling for each card group */
+.flight-cards, .hotel-cards, .activity-cards {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 30px; /* Adjust for bottom spacing */
+    background-color: transparent; /* Make background transparent */
+}
+
+.flight-cards, .hotel-cards, .activity-cards {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Styling for each individual booking card with different images */
+.booking-card {
+    background-color: rgba(255, 255, 255, 0.7); /* Add slight opacity to card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 300px; /* Fixed height for consistency */
+    position: relative; /* For positioning text over images */
+}
+
+/* Add different background images to each card */
+.flight-cards .booking-card:nth-child(1) {
+    background-image: url('images/flight-image-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.flight-cards .booking-card:nth-child(2) {
+    background-image: url('images/flight-image-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.flight-cards .booking-card:nth-child(3) {
+    background-image: url('images/flight-image-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.flight-cards .booking-card:nth-child(4) {
+    background-image: url('images/flight-image-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hotel-cards .booking-card:nth-child(1) {
+    background-image: url('images/hotel-image-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hotel-cards .booking-card:nth-child(2) {
+    background-image: url('images/hotel-image-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hotel-cards .booking-card:nth-child(3) {
+    background-image: url('images/hotel-image-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hotel-cards .booking-card:nth-child(4) {
+    background-image: url('images/hotel-image-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.activity-cards .booking-card:nth-child(1) {
+    background-image: url('images/activity-image-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.activity-cards .booking-card:nth-child(2) {
+    background-image: url('images/activity-image-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.activity-cards .booking-card:nth-child(3) {
+    background-image: url('images/activity-image-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.activity-cards .booking-card:nth-child(4) {
+    background-image: url('images/activity-image-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Add a text overlay for visibility */
+.booking-card .details {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a white translucent background for text */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Text styling inside each card */
+.details h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.quick-links, .connect {
+    width: 45%;
+}
+
+.quick-links h3, .connect h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.quick-links ul, .connect ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li, .connect li {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .connect a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.quick-links a:hover, .connect a:hover {
+    color: white;
+}
+
+.connect ul {
+    display: flex;
+    gap: 15px;
+}
+
+.connect a {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .flight-cards, .hotel-cards, .activity-cards {
+        width: 45%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-links, .connect {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .flight-cards, .hotel-cards, .activity-cards {
+        width: 100%;
+    }
+}
